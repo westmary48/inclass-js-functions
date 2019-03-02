@@ -23,3 +23,12 @@ namePrinter('Mary', 'West');
 namePrinter('Sarah', 'Best');
 namePrinter('North', 'Star');
 
+const nuggestizer = (animal) => {
+    return `processed  ${animal}`;
+}
+
+console.log(nuggestizer('pig'));
+console.log(nuggestizer('fish'));
+console.log(nuggestizer('chicken'));
+console.log(nuggestizer('student'));
+console.log(nuggestizer('cow'));
