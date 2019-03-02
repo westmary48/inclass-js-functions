@@ -32,3 +32,10 @@ console.log(nuggestizer('fish'));
 console.log(nuggestizer('chicken'));
 console.log(nuggestizer('student'));
 console.log(nuggestizer('cow'));
+
+const dogBreed = (dogName) => {
+    return `my favorite dog breed is ${dogName}`;
+}
+console.log(dogBreed('goldendoodle'));
+console.log(dogBreed('yorkie'));
+console.log(dogBreed('Border Collie'));
