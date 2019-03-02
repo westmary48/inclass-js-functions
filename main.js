@@ -14,6 +14,7 @@
 // console.log(`${firstName2} ${lastName2}`);
 
 
+// console.log functions printing
 const namePrinter = (firstName, lastName) => {
     console.log(`${firstName} ${lastName}`);
 };
@@ -34,8 +35,28 @@ console.log(nuggestizer('student'));
 console.log(nuggestizer('cow'));
 
 const dogBreed = (dogName) => {
-    return `my favorite dog breed is ${dogName}`;
+    return `my favorite dog breed is a ${dogName}`;
 }
 console.log(dogBreed('goldendoodle'));
 console.log(dogBreed('yorkie'));
 console.log(dogBreed('Border Collie'));
+
+//print to the dom functions
+
+// const dogBreedDiv = document.getElementById('dog-breeds');
+// dogBreedDiv.innerHTML = dogBreed('lab');
+
+// const nuggestizerDiv = document.getElementById('nuggetizer')
+// nuggestizerDiv.innerHTML = nuggestizer('bear');
+// nuggestizerDiv.innerHTML += nuggestizer('kitten');
+
+// general function to be used to combine the two functions above
+
+const printToDom = (divId, textToPrint) => {
+const selectedDiv = document.getElementById(divId);
+selectedDiv.innerHTML += textToPrint;
+};
+printToDom('dog-breeds',dogBreed('lab'))
+printToDom('nuggetizer',nuggestizer('bear'))
+printToDom('nuggetizer',nuggestizer('kitten'))
+printToDom('nuggetizer', 'mmmmmmmmm');
