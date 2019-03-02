@@ -60,3 +60,19 @@ printToDom('dog-breeds',dogBreed('lab'))
 printToDom('nuggetizer',nuggestizer('bear'))
 printToDom('nuggetizer',nuggestizer('kitten'))
 printToDom('nuggetizer', 'mmmmmmmmm');
+
+let bandNumber = 1;
+
+const addBand = (bandName, textToPrint ) => {
+    // get band
+    // text to send
+    const bandText = `<h5>${bandNumber}. ${bandName} </h5>`
+    //modify band number
+    bandNumber = bandNumber + 1;
+printToDom('band-list', bandText)
+}
+
+addBand('Metalica');
+addBand('VHS Collection');
+addBand('Future Generations');
+addBand('Yoke Lore');
